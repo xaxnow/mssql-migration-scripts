@@ -3,12 +3,15 @@ migration sql server databases
 
 ## items
 
+some items still need you type password , such as credentials
+
 1. logins
-2. roles
+2. server roles
 3. jobs
 4. linked servers
 5. credentials
-6. master db objects. e.g. table,sp,schema
+6. mails
+7. master db objects. e.g. table,sp,schema
 
 ## what you need to know if you want to write some such scripts
 
