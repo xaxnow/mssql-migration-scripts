@@ -13,6 +13,11 @@ some items still need you type password , such as credentials
 6. mails
 7. master db objects. e.g. table,sp,schema
 
+## requirement
+
+- SMO. If you installed SSMS you do not need to install it .
+- SQL Server version : successfully run in above 2014
+
 ## usage
 
 default user is "sql_user" .
