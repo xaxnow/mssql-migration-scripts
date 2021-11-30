@@ -17,6 +17,7 @@ some items still need you type password , such as credentials
 
 default user is "sql_user" .
 default password gets from the "SecurityPwd.txt" if you do not specified user & password in "instanceInfo.txt"
+
 **instanceInfo.txt format**:
 ```
 # if user & password is "",default user & password will be used
