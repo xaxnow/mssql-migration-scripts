@@ -23,7 +23,7 @@ default password gets from the "SecurityPwd.txt" if you do not specified user & 
 # if user & password is "",default user & password will be used
 ip,port,user,password
 ```
-**run**:
+**run script**:
 ```
 powershell -ExecutionPolicy ByPass .\Start-Run.ps1
 ```
