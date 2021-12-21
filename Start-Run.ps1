@@ -52,7 +52,7 @@ ForEach ($i in $instances) {
         #files name for save information
         $DbaServerRoles = $basePath + "DbaServerRoles_" + $FileDate + ".sql"
         $DbaLogins = $basePath + "DbaLogins_" + $FileDate + ".sql"
-        $DbaAgentProxyAccounts = $basePath + "DbaAgentProxyAccounts_" + $FileDate + ".sql"
+        # $DbaAgentProxyAccounts = $basePath + "DbaAgentProxyAccounts_" + $FileDate + ".sql"
         $DbaCredentials = $basePath + "DbaCredentials_" + $FileDate + ".sql"
         $DbaLinkedServers = $basePath + "DbaLinkedServers_" + $FileDate + ".sql"
         $DbaMails = $basePath + "DbaMails_" + $FileDate + ".sql"
@@ -114,7 +114,7 @@ ForEach ($i in $instances) {
     }
     
 
-}
+
 # "Copying Files"
 Copy-DbaFiles -srcPath $LocalDataPath
 remove-ExpiredLogFile -Name "SMO_Object" -path $ShellDir
