@@ -65,21 +65,22 @@ ForEach ($i in $instances) {
             "Exporting Server Roles"
             $ServerRoles > $DbaServerRoles
         }
-        $Logins = Export-DbaLogins -Server $srv 
-        if ($null -ne $Logins) {
-            "Exporting Logins"
-            $Logins > $DbaLogins
+        "Exporting Logins"
+        Export-DbaLogins -Server $srv -path $DbaLogins 
+        # if ($null -ne $Logins) {
+        #     "Exporting Logins"
+        #     $Logins > $DbaLogins
         }
-        $SystemDBUser = Export-DbaSystemDBUser -Server $srv 
-        if ($null -ne $SystemDBUser) {
-            "Exporting System Databases User"
-            $SystemDBUser >> $DbaLogins
-        }
-        $AgentProxyAccounts = Export-DbaAgentProxyAccounts -Server $srv 
-        if ($null -ne $AgentProxyAccounts ) {
-            "Exporting Agent Proxy Accounts"
-            $AgentProxyAccounts > $DbaAgentProxyAccounts
-        }
+        # $SystemDBUser = Export-DbaSystemDBUser -Server $srv 
+        # if ($null -ne $SystemDBUser) {
+        #     "Exporting System Databases User"
+        #     $SystemDBUser >> $DbaLogins
+        # }
+        # $AgentProxyAccounts = Export-DbaAgentProxyAccounts -Server $srv 
+        # if ($null -ne $AgentProxyAccounts ) {
+        #     "Exporting Agent Proxy Accounts"
+        #     $AgentProxyAccounts > $DbaAgentProxyAccounts
+        # }
         $Credentials = Export-DbaCredentials -Server $srv 
         if ($null -ne $Credentials) {
             "Exporting Credentials"
